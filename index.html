@@ -66,15 +66,11 @@
     <div class="mb-auto">
     <div class="container mx-auto ">
       <div class="text-center px-3 lg:px-0">
-        <h1
-          class="my-4 text-3xl lg:text-5xl font-black leading-tight"
-        >
+        <h1 class="my-4 text-3xl lg:text-5xl font-black leading-tight">
           Super Simple Pub-Sub Service
         </h1>
-        <p
-          class="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mb-8"
-        >
-          You can publish using..... Thats it!
+        <p class="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mb-8">
+          You can publish and subscribe(read) from the topics!
         </p>
 
         <!--button
@@ -104,22 +100,22 @@
         <div class="w-full p-4 flex flex-col flex-grow flex-shrink">
             
             <div class="w-full font-bold text-2xl text-black px-6 py-4 text-center">
-                API for setting a key/value 
+                Publish 
             </div>
             
           <div class="flex justify-center " >
             <div class="flex w-full md:w-1/2 flex-wrap px-1 m-2 text-white bg-black  shadow rounded overflow-hidden">
                 
               <div class="w-full text-center text-xl text-gray-200 mt-4 mb-4">
-                <span class="text-l">https://</span><span class="font-bold">api.keyval.org/set/</span><span class="font-bold text-blue-500">{KEY}</span>/<span class="font-bold text-red-500">{VALUE}</span>
+                <span class="text-l">https://</span><span class="font-bold">api.pubsub.in/publish/</span><span class="font-bold text-blue-500">{TOPIC}</span>/<span class="font-bold text-red-500">{VALUE}</span>
               </div>
             </div>
           </div>
             
-          <div class="mx-auto text-sm text-gray-800 px-6 mt-5">
+          <!--div class="mx-auto text-sm text-gray-800 px-6 mt-5">
               <p>If you want to auto-generate a key, you can set key as - </p>
-              <p class="text-center">ex:- https://api.keyval.org/<span class="font-bold text-pink-600">-</span>/{VALUE}</p>
-          </div>
+              <p class="text-center">ex:- https://api.pubsub.in/<span class="font-bold text-pink-600">-</span>/{VALUE}</p>
+          </div-->
         
         </div>
 
@@ -127,14 +123,18 @@
         <div class="w-full p-4 flex flex-col flex-grow flex-shrink">
             
             <div class="w-full font-bold text-2xl text-black px-6 py-4 text-center">
-                API to get a value
+                To <span class="line-through">Subscribe</span> Read
+            </div>
+			
+			<div class="mx-auto text-ml text-gray-800 px-6 mt-5">
+              <p>npm and python modules are on the way. </p>
             </div>
             
           <div class="flex justify-center" >
             <div class="flex w-full md:w-1/2 flex-wrap px-1 m-2 text-white bg-black  shadow rounded overflow-hidden">
                 
               <div class="w-full text-center text-xl text-gray-200 mt-4 mb-4">
-                <span class="text-l">https://</span><span class="font-bold">api.keyval.org/get/</span><span class="font-bold text-blue-500">{KEY}</span>
+                <span class="text-l">https://</span><span class="font-bold">api.pubsub.in/subscribe/</span><span class="font-bold text-blue-500">{TOPIC}</span>
               </div>
             </div>
           </div>
