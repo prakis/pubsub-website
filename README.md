@@ -1,7 +1,5 @@
-# KeyVal.org landing page
+# PubSub.in Website
 
-Website is hosting on Netlify
+Website is hosting on Netlify.com
 
-Backend is served by https://Railway.app
 
-More on the way...
